@@ -19,6 +19,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^bot/jorge/', include('Bot.urls')),
     url(r'^bot/', include('Bot.urls')),
     url(r'^admin/', admin.site.urls),
 ]
